@@ -1,0 +1,75 @@
+@keyframes rotate{
+    100%{
+        rotate: 360deg;
+    }
+}
+@keyframes transition-1{
+        100%{
+            transform: translate(-40px , -20px);
+        }
+}
+@keyframes transition-2{
+    100%{
+        transform: translate(40px , -20px);
+    }
+}
+@keyframes transition-3{
+    100%{
+        transform: translate(-40px , 20px);
+    }
+}
+@keyframes transition-4{
+    100%{
+        transform: translate(40px , 20px);
+    }
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.countiner{
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-top: 50px;
+    animation:  linear rotate 1.5s infinite;
+}
+.box{
+    width:  50px;
+    height:50px;
+}
+.Model{
+    width: 100%;
+    height: 100%;
+}
+._1 , ._2 , ._3, ._4{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(1, 111, 255);
+      border-radius: 50%;
+}
+._1 , ._4{
+    background-color: rgb(255, 41, 41);
+} 
+._1{
+        animation: transition-1 infinite 1.05s alternate;
+        
+}
+._2{
+    animation: transition-2 infinite 1.05s   alternate;
+}
+._3{
+    animation: transition-3 infinite 1.05s   alternate;
+}
+._4{
+    animation: transition-4 infinite 1.05s   alternate;
+}
+
+
+
+
